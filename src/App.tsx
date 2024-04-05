@@ -1,7 +1,9 @@
-import { Link, Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import About from "./components/About";
 import Home from "./components/Home";
 import Layout from "./components/Layout";
+import MoodDetail from "./components/MoodDetail";
 import NoMatch from "./components/NoMatch";
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="add_mood" element={<MoodDetail />} />
+          <Route path="about" element={<About />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

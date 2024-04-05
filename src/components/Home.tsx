@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
-import MoodDetail from "./MoodDetail";
-
 function Home() {
   return (
     <div>
-      <MoodDetail />
+      <h1>Home</h1>
+      <p>Journal your mood or emotions throughout the day to identify patterns over time.</p>
     </div>
   );
 }

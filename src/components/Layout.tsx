@@ -2,7 +2,7 @@ import { NavbarToggle } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
@@ -25,9 +25,8 @@ function Layout() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto mb-2 mb-sm-0">
               <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/add_mood">Add Mood</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/dashboard">Dashboard</Nav.Link>
-              <Nav.Link href="/nothing-here">Nothing Here</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
