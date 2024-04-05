@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import MoodDetail from "./MoodDetail";
 
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <MoodDetail />
     </div>
   );
 }
